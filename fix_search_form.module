@@ -1,0 +1,14 @@
+<?php
+
+function fix_search_form_form_search_block_form_alter(&$form, &$form_state, $form_id)
+{
+
+ // $form['search_block_form']['#weight'] = 30;
+  $form['actions']['submit']['#type'] = 'image_button';
+  $form['actions']['submit']['#src'] = drupal_get_path('module', 'fix').'/search.png';
+  
+  $form['search_block_form']['#attributes']['placeholder'] = $form['search_block_form']['#title'];
+
+  $form['search_block_form']['#size'] = 25;
+  $form['search_block_form']['#default_value'] = $form['search_block_form']['#title'];
+}

@@ -1,0 +1,5 @@
+name = Fix search form
+description = "Custom fix module for standard search form"
+core = 7.x
+
+files[] = fix_search_form.module
