@@ -5,3 +5,10 @@ core = 7.x
 package = Custom
 
 files[] = fix_search_form.module
+
+
+; Information added by drush on 2012-10-02
+version = "unknown"
+project = "fix_search_form"
+datestamp = "1349173051"
+
